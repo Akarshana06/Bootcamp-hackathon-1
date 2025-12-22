@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bootcamp-hackathon-1
+# 🚨 AI Legal Clause Summarizer
 
-## Getting Started
+This project is about building an **AI “digital lawyer”** that helps normal users understand long and confusing **Terms & Conditions** before they click “Accept”.
 
-First, run the development server:
+Most people never read these documents, but they often contain:
+- Hidden **auto-renewal** charges  
+- **Non-refundable** payments  
+- **Third-party** data sharing (selling or sharing your data)  
+- **Arbitration** clauses that make it harder to sue
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The goal is to **scan that fine print** and clearly show what is risky for the user.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✅ What I Learned So Far (For Today)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Today’s focus was on **understanding the project idea**, not on coding:
 
-## Learn More
+- Understood the **problem**: people accept Terms & Conditions without knowing the risks.  
+- Understood the **solution**: an AI tool that:
+  - Scans T&C documents  
+  - Highlights risky clauses with **Red/Yellow/Green** flags  
+  - Answers specific questions by finding the right clauses  
+  - Explains everything in **simple, clear language**
 
-To learn more about Next.js, take a look at the following resources:
+- Understood the **high-level tools** that will be used later:
+  - **Next.js** for building the web app interface. 
+  - **LangChain.js + LLMs** for analyzing and summarizing legal text.  
+  - **MongoDB Atlas Vector Search** (later) for storing and searching through chunks of the document.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
